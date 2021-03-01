@@ -1,0 +1,1005 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1500px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* nav section style */
+
+.navbar {
+    background-color:#006994;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding:0 15px;
+    margin-bottom: 10px;
+    font-family: 'Domine', serif;
+    transition: all 0.5s ease;
+}
+header .sticky {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.navbar .logo a {
+    color: #CCE1EA;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Monoton', cursive;
+    transition: all 0.5s ease;
+}
+
+header .sticky .logo a {
+    color: #006994;
+}
+
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.5s ease;
+}
+
+header .sticky .menu li a {
+    color: #006994;
+    
+}
+.navbar .menu li a:hover {
+    color: #1E90FF;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    display: none;
+}
+
+header .sticky .menu-btn {
+    color:  #006994;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #660000;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #FFF;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+/* Home section style */
+
+.banner {
+    display: flex;
+    background: url(white-background.jpg);
+    background-size: cover;
+    height: 100%;
+    color: #3387A9 ;
+    min-height: 500px;
+    font-family: 'Share Tech Mono', monospace;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.banner h2 {
+    font-size: 27px;
+}
+
+.banner h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3;
+}
+
+.banner h3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.banner .txt-rotate  {
+    color: #660000;
+}
+
+/* about section style */
+
+
+.about {
+    font-family: 'Cairo', sans-serif;
+}
+
+.about .about-title {
+    position: relative;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #3387A9;
+}
+
+.about .about-title::before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 3px;
+    background-color:#3387A9;
+    transform: translateX(-50%);
+}
+
+.about .about-title::after {
+    content: "Who Am I";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #660000;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+.about h3 {
+    padding-left: 10px;
+    color: #006994;
+    font-size: 25px;
+    font-weight: 600;
+}
+.about p {
+    padding-left: 15px;
+    color: #006994;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: justify;
+    
+}
+
+.about .download-btn{
+    
+    display: block;
+    background: #3387A9;
+    color: #fff;
+    font-size: 20px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 45%;
+    border: 2px solid #3387A9;
+    border-radius: 4px;
+    transition: all 1s ease;
+}
+
+.about .download-btn:hover {
+    color: #3387A9;
+    background: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/* skills styling */
+
+.skills {
+    font-family: 'Cairo', sans-serif;
+    background-color: #006994;
+    padding-bottom: 25px;
+    padding-top: 15px;
+
+}
+
+.skills .skills-title {
+    position: relative;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.skills .skills-title::before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 3px;
+    background-color:#fff;
+    transform: translateX(-50%);
+}
+
+.skills .skills-title::after {
+    content: "What I Know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #800020;
+    padding: 5px;
+    background: #006994;
+    transform: translateX(-50%);
+
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left p {
+    padding-left: 15px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: justify;   
+}
+
+.skills .skills-content .left h3 {
+    padding-left: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span {
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+    padding-right: 5px;
+}
+.skills .skills-content .right .line {
+    height: 4px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #800020;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+.skills-content .right .css::before {
+    width: 80%;
+}
+.skills-content .right .js::before {
+    width: 60%;
+}
+.skills-content .right .react::before {
+    width: 40%;
+}
+.skills-content .right .swift::before {
+    width: 10%;
+}
+
+/* services style */
+
+
+.services {
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.services .serv-title {
+    position: relative;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    padding-bottom: 22px;
+    padding-top: 65px;
+    color: #3387A9;
+}
+
+.services .serv-title::before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 3px;
+    background-color:#3387A9;
+    transform: translateX(-50%);
+}
+
+.services .serv-title::after {
+    content: "What I Offer";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #660000;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    text-align: center;
+    border-radius: 6px;
+    padding:40px 35px;
+    cursor: pointer;
+    background: #006994;
+    transition: all 0.5s ease;
+    margin-bottom: 85px;
+}
+.services .serv-content .card:hover {
+    background: #800020;
+
+}
+
+.services .serv-content .card .box {
+    transition: all 0.5s ease;
+}
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color:   #800020;
+    transition: color 0.5s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 7px 0;
+    color:  #fff;
+}
+
+.services .serv-content .card p {
+    font-size:18px;
+    color: #fff;
+} 
+
+.contact {
+    font-family: 'Cairo', sans-serif;
+    background-color: #006994;
+    padding-bottom: 25px;
+    padding-top: 20px;
+
+}
+
+.contact .contact-title {
+    position: relative;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.contact .contact-title::before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 3px;
+    background-color:#fff;
+    transform: translateX(-50%);
+}
+.contact .contact-title::after {
+    content: "Get In Touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #800020;
+    padding: 5px;
+    background: #006994;
+    transform: translateX(-50%);
+}
+
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+}
+.contact .contact-content .left .icons {
+    margin: 10px 0px;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info {
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;  
+}
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: #800020;
+}
+.contact .contact-content .info .head {
+    font-weight: 800;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea {
+    height: 80px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif ;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    background: #FFF;
+    font-size: 18px;
+    color: #006994;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.contact .right form .button button:hover {
+    background: #800020;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 2px solid #800020;
+    color: #fff;
+}
+
+/* footer styling */
+
+footer {
+    background:#fff;
+    padding: 25px 23px;
+    color: #006994;
+    text-align: center;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width:280px) {
+   .navbar .logo a {
+       font-size: 25px;
+       padding-right: 25px;
+   } 
+
+  .banner h2 {
+      font-size: 22px;
+      padding-left:3px;
+  }
+  .banner h1 {
+      font-size: 45px;
+  }
+  .banner h3 {
+     font-size: 25px;
+  }
+  .about .about-title {
+      font-size: 25px;
+  }
+  .about .about-title::after {
+      font-size: 17px;
+  }
+  .about h3 {
+      font-size: 20px;
+  }
+  .about p {
+    font-size: 16px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+.about .download-btn {
+    margin-left: 20%;
+}
+
+.skills .skills-title{
+    font-size: 25px;
+}
+.skills .skills-title::after{
+    font-size: 17px;  
+}
+
+.skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.skills .skills-content .right span {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.skills .skills-content .left h3 {
+    font-size: 22px;
+}
+.skills .skills-content .left p {
+    font-size: 17px;
+    padding-right: 10px;
+}
+
+.services .serv-title {
+    font-size: 28px;
+}
+.services .serv-title::before {
+    height: 2px;
+    width: 160px; 
+}
+.services .serv-title::after{
+    font-size: 13px;
+}
+.services .serv-content {
+    display: grid;
+    grid-gap: 10px;
+}
+.services .serv-content .card{
+    width: 100%;
+}
+.services .serv-content .card i {
+    font-size: 35px;
+}
+.services .serv-content .card .text {
+    font-size: 22px;
+}
+.services .serv-content .card p {
+    font-size:16px;
+}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .navbar .logo a {
+        font-size: 28px;
+        padding-right: 15px;
+    } 
+ 
+   .banner h2 {
+       font-size: 25px;
+       padding-left:3px;
+   }
+   .banner h1 {
+       font-size: 50px;
+   }
+   .banner h3 {
+      font-size: 30px;
+   }
+  
+   .about .about-title {
+       font-size: 25px;
+   }
+   .about .about-title::after {
+       font-size: 17px;
+   }
+   .about h3 {
+       font-size: 20px;
+   }
+   .about p {
+     font-size: 16px; 
+     padding-right: 10px; 
+ }
+ .about .download-btn {
+     margin-left: 25%;
+ }
+  
+ 
+ .skills .skills-title{
+     font-size: 25px;
+ }
+ .skills .skills-title::after{
+     font-size: 17px;  
+ }
+ 
+ .skills .skills-content .column {
+     width: 100%;
+     margin-bottom: 35px;
+ }
+ 
+ .skills .skills-content .right span {
+     padding-right: 10px;
+     padding-left: 10px;
+     font-size: 16px;
+ }
+ .skills .skills-content .left h3 {
+     font-size: 22px;
+ }
+ .skills .skills-content .left p {
+     font-size: 17px;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ 
+ 
+ .services .serv-title {
+     font-size: 30px;
+ }
+ .services .serv-title::before {
+     height: 2px;
+     width: 160px; 
+ }
+ .services .serv-title::after{
+     font-size: 13px;
+ }
+ .services .serv-content {
+     display: grid;
+     grid-gap: 10px;
+ }
+ .services .serv-content .card{
+     width: 100%;
+     padding-bottom: 5px;
+    
+ }
+ .services .serv-content .card i {
+     font-size: 35px;
+ }
+ .services .serv-content .card .text {
+     font-size: 22px;
+ }
+ .services .serv-content .card p {
+     font-size:16px;
+     
+
+ } 
+ .contact .contact-title::after {
+     font-size: 15px;
+ }
+
+ .contact .contact-content .column {
+     width: 100%;
+ }
+ .contact .contact-content .left .icons {
+     font-size: 18px;
+ }
+
+ .contact .right form .field input,
+.contact .right form .textarea textarea {
+     font-size: 15px;
+     height: 85%;
+    width: 85%;
+    
+ }
+
+
+
+
+}
+@media only screen and (max-width:450px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .navbar .logo a {
+        font-size: 28px;
+        padding-right: 15px;
+    } 
+ 
+   .banner h2 {
+       font-size: 25px;
+       padding-left:3px;
+   }
+   .banner h1 {
+       font-size: 50px;
+   }
+   .banner h3 {
+      font-size: 30px;
+   }
+  
+   .about .about-title {
+       font-size: 25px;
+   }
+   .about .about-title::after {
+       font-size: 17px;
+   }
+   .about h3 {
+       font-size: 20px;
+   }
+   .about p {
+     font-size: 16px; 
+     padding-right: 10px; 
+ }
+ .about .download-btn {
+     margin-left: 25%;
+ }
+  
+ 
+ .skills .skills-title{
+     font-size: 25px;
+ }
+ .skills .skills-title::after{
+     font-size: 17px;  
+ }
+ 
+ .skills .skills-content .column {
+     width: 100%;
+     margin-bottom: 35px;
+ }
+ 
+ .skills .skills-content .right span {
+     padding-right: 10px;
+     padding-left: 10px;
+     font-size: 16px;
+ }
+ .skills .skills-content .left h3 {
+     font-size: 22px;
+ }
+ .skills .skills-content .left p {
+     font-size: 17px;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ 
+ 
+ .services .serv-title {
+     font-size: 30px;
+ }
+ .services .serv-title::before {
+     height: 2px;
+     width: 160px; 
+ }
+ .services .serv-title::after{
+     font-size: 13px;
+ }
+ .services .serv-content {
+     display: grid;
+     grid-gap: 10px;
+ }
+ .services .serv-content .card{
+     width: 100%;
+     padding-bottom: 5px;
+    
+ }
+ .services .serv-content .card i {
+     font-size: 35px;
+ }
+ .services .serv-content .card .text {
+     font-size: 22px;
+ }
+ .services .serv-content .card p {
+     font-size:16px;
+     
+
+ } 
+ .contact .contact-title::after {
+     font-size: 15px;
+ }
+
+ .contact .contact-content .column {
+     width: 100%;
+ }
+ .contact .contact-content .left .icons {
+     font-size: 18px;
+ }
+
+ .contact .right form .field input,
+.contact .right form .textarea textarea {
+     font-size: 15px;
+     height: 85%;
+    width: 85%;
+    
+ }
+
+
+}
+
+
+@media only screen and (max-width: 1037px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #fff;
+        z-index: 999;
+    }
+   
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #006994;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.5s ease;
+        z-index: 999;
+    }
+
+    header .navbar .menu.active {
+        left: 0;
+    }
+
+    header .navbar .menu li {
+        display:block
+    }
+
+   header .navbar .menu li a {
+        display: inline-block;
+        margin:20px 0;
+        font-size: 25px;
+    } 
+
+    .about p {
+        
+        padding-right: 10px; 
+    }
+ 
+    
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .skills .skills-content .right span {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .skills .skills-content .left p {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+ 
+    .services .serv-content .card{
+        width: 75%;
+        height: 100%;
+        margin-left: 15%;
+       
+        
+
+    }
+
+}

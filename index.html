@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samer Ghosn Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ce93041dc8.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="scroll-up-btn" onclick="scrollAuto()">
+            <i class="fas fa-angle-up"></i>
+
+        </div>
+
+         <!--Nav section-->
+        <header>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo">
+                    <a href="#">Portfolio</a>
+                </div>
+                <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">My Skills</a></li>
+                <li><a href="#services" onclick="toggleMenu()">My Services</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+                </ul>
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+
+                </div>
+
+            </div>
+        </nav>
+        </header>
+        
+        <!--Home section-->
+        <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, my name is</h2>
+            <h1>Samer Ghosn</h1>
+            <h3>and I'm a <span class="txt-rotate" data-period="2000" data-rotate='["Developer","IOS Developer","Web Developer"]'></span></h3>
+        </div>
+        </section>
+
+        <!--about Section-->
+       <section class="about" id="about">
+           
+        <div class="about-title">
+               <h2>About Me</h2>
+           </div>
+           <div class="about-content">
+               <div class="contentBx">
+                   <h3> I'm a FrontEnd Web Developer.</h3>
+                   <p> I work in frontend web development, i make sure the project im working on is designed perfectly and professionally focusing on the clients' vision so it can
+                       come to life in their website. I work on the website responsiveness since now-a-days people are using their phones more than their computers and we dont want the 
+                       website looking disorganized,unprofessional and unclear to the end user.
+                       To me websites are how people can know who you are and what you represent and its my job to make sure my clients get the best representation through their websites.
+                    </p>
+                    <h3> I'm an IOS App Developer.</h3>
+                    <p> I work in IOS development using swift and Xcode for IDE i can develop apps wether its IOS, macOS, watchOS or tvOS. With the expansion 
+                        of apple products world wide it is very important to get an app on Apple products. Hybrid apps in my opinon dont get the job done,
+                        having an app created specifically for IOS will run faster, smoother and with less bugs to fix. </p>
+                  <button class="download-btn" type="submit" onclick="window.open('testdownload.txt')">Download CV</button>
+               </div>
+           </div>
+       </section>
+
+       <!--Skills Section-->
+
+       <section class="skills" id="skills">
+           <div class="skills-title">
+               <h2>My Skills</h2>
+           </div>
+           <div class="skills-content">
+               <div class="column left">
+                   <h3>Skills and Knowledge</h3>
+                   <p>On the right you see all the languages i know and how much i completed learning them, in Programming you can never know a language 100%
+                       it's always evolving and there are always ways to improve and learn, developers who say they know everything will never succeed because in this
+                       domian it is impossilbe to know everything no matter how much experince you have it's never done you always have to learn. Therefore i will
+                       never reach a 100% in a language because i will keep learning and evolving. Other languages and frameworks not listed include: Bootstrap,Redux,REST,
+                       Node.js.
+                   </p>
+               </div>
+               <div class="column right">
+                   <div class="bars">
+                       <div class="info">
+                        <span><i class="fab fa-html5 fa-3x"></i> HTML</span>
+                        <span>90%</span> 
+                       </div>
+                       <div class="line html"></div>
+                   </div>
+                    <div class="bars">
+                        <div class="info">
+                        <span><i class="fab fa-css3-alt fa-3x"></i> CSS</span>
+                         <span>80%</span> 
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                 <div class="bars">
+                        <div class="info">
+                         <span><i class="fab fa-js fa-3x"></i> JavaScript</span>
+                         <span>60%</span> 
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                 <div class="bars">
+                        <div class="info">
+                         <span><i class="fab fa-react fa-3x"></i> REACT</span>
+                         <span>40%</span> 
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                <div class="bars">
+                        <div class="info">
+                         <span><i class="fab fa-swift fa-3x"></i> SWIFT</span>
+                         <span>10%</span> 
+                        </div>
+                        <div class="line swift"></div>
+                    </div>
+                </div>  
+           </div>
+       </section>
+
+       <!--Services Section-->
+        <section class="services" id="services">
+            <div class="max-width">
+                <h2 class="serv-title">My Services</h2>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-paint-brush fa-3x"></i>
+                            <div class="text">UI/UX Design</div>
+                            <p>Design responsive, user-friendly interfaces using the latest styling and UI/UX design tools like CSS3 , bootstrab, Scss, Sass and much more</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-laptop-code fa-3x"></i>
+                            <div class="text">Web Development</div>
+                            <p>Developing fast well organized websites using HTML5, Javascript, React.js. Making sure the clients vision is represented in the website. </p>
+                        </div>
+                     </div>
+                   <div class="card">
+                        <div class="box">
+                            <i class="fab fa-app-store-ios fa-3x"></i>
+                            <div class="text">IOS App Development</div>
+                            <p>Making Apps for Apple products including IOS, macOS, watchOS, and tvOS using swift and Xcode To expand the client's app in the apple product fields</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact section-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="contact-title">Contact Me</h2>
+                <div class="contact-content">
+                     <div class= "column left">
+                         <div class="text">Get in Touch</div>
+                         <p>Below are ways to reach me and contact me for projects, you can also send me a message using this contact form  on the right.</p>
+                         <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="info">
+                                    <div class="head">Phone Number:</div>
+                                    <div class="sub-title">+961 71 365 162</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email:</div>
+                                    <div class="sub-title">samer_ghosn@hotmail.com</div>
+                                </div>
+                             </div>
+                                <div class="row">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="info">
+                                        <div class="head">Address:</div>
+                                        <div class="sub-title">Beirut,Lebanon</div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="column right">
+                            <div class="text">Send a Message</div>
+                            <form action="#">
+                                <div class="fields">
+                                    <div class="field name">
+                                        <input type="text" placeholder="Name" required>
+                                     </div>
+                                     <div class="field email">
+                                            <input type="email" placeholder="Email" required>
+                                      </div>
+                                    </div>
+                                      <div class="field">
+                                        <input type="text" placeholder="Subject" required>
+                                      </div>
+                                      <div class="field textarea">
+                                       <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                                      </div>
+                                      <div class="button">
+                                          <button type="submit">Send</button>
+                                      </div>
+                                    </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer section-->
+        <footer>
+            <span>Created By Samer Ghosn | <span class="far fa-copyright"></span> Copyright 2021. All Rights Reserved.</span>
+        </footer>
+    </body>
+    
+    
+</html>
