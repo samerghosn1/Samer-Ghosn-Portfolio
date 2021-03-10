@@ -69,3 +69,76 @@ window.onload = function()  {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 } ";
     document.body.appendChild(css);
 }
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAMpu0KaTtad1AtgPabdXdtOvM8Di1YS78",
+    authDomain: "contact-form-25ccd.firebaseapp.com",
+    projectId: "contact-form-25ccd",
+    storageBucket: "contact-form-25ccd.appspot.com",
+    messagingSenderId: "299147970616",
+    appId: "1:299147970616:web:3f442cb219bad1f84dfecd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+
+// reference contactInfo collections 
+
+let contactInfo = firebase.database().ref("infos");
+
+
+
+//contact form listen for submit
+
+ document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+ function submitForm(e) {
+
+    e.preventDefault();
+
+//get input values
+
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let subject = document.querySelector(".subject").value;
+    let message = document.querySelector(".message").value;
+
+    console.log(name , email,subject, message);
+
+    saveContactInfo(name,email,subject,message);
+
+    document.querySelector(".contact-form").reset();
+
+    sendEmail(name, email,subject, message);
+
+ }
+
+ //save infos to firebase 
+
+ function saveContactInfo (name,email,subject,message) {
+     
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    });
+ }
+
+ // send email info 
+
+ function sendEmail(name, email,subject, message) {
+     Email.send({
+         Host: "smtp.gmail.com",
+         Username: "sgwebdevelopments@gmail.com",
+         Password: "pwufanleeqedutvo",
+         To: "sgwebdevelopments@gmail.com",
+         From: "sgwebdevelopments@gmail.com",
+         Subject: `${name} has sent you an email with this subject : ${subject}`,
+         Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+
+     }).then((message) => alert("Your Message Has Been Sent Successfully. We will contact you within 24 hours"))
+ }
