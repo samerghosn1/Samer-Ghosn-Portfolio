@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ce93041dc8.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script.js"></script>
+        
     </head>
     <body>
         <div class="scroll-up-btn" onclick="scrollAuto()">
@@ -193,20 +193,20 @@
                         </div>
                         <div class="column right">
                             <div class="text">Send a Message</div>
-                            <form action="#">
+                            <form class="contact-form" method="POST">
                                 <div class="fields">
                                     <div class="field name">
-                                        <input type="text" placeholder="Name" required>
+                                        <input id= "name" type="text" placeholder="Name" required>
                                      </div>
                                      <div class="field email">
-                                            <input type="email" placeholder="Email" required>
+                                            <input id= "email" type="email" placeholder="Email" required>
                                       </div>
                                     </div>
                                       <div class="field">
-                                        <input type="text" placeholder="Subject" required>
+                                        <input class = "subject" type="text" placeholder="Subject" required>
                                       </div>
                                       <div class="field textarea">
-                                       <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                                       <textarea class = "message" cols="30" rows="10" placeholder="Message" required></textarea>
                                       </div>
                                       <div class="button">
                                           <button type="submit">Send</button>
@@ -221,6 +221,9 @@
         <footer>
             <span>Created By Samer Ghosn | <span class="far fa-copyright"></span> Copyright 2021. All Rights Reserved.</span>
         </footer>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
     
     
