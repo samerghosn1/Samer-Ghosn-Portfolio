@@ -137,7 +137,7 @@ let contactInfo = firebase.database().ref("infos");
          Password: "pwufanleeqedutvo",
          To: "sgwebdevelopments@gmail.com",
          From: "sgwebdevelopments@gmail.com",
-         Subject: `${name} has sent you an email with this subject : ${subject}`,
+         Subject: `${subject}`,
          Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
 
      }).then((message) => alert("Your Message Has Been Sent Successfully. We will contact you within 24 hours"))
